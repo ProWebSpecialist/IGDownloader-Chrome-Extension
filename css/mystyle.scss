@@ -1,0 +1,133 @@
+.main {
+  opacity: 1;
+  transition: opacity 0.4s ease-out 0s;
+  border: none;
+  width: 620px;
+  max-height: 500px;
+  background-color: #fff;
+  margin: 0;
+  .header {
+    display: block;
+    padding: 8px;
+    display: flex;
+    .logo-wrap {
+      display: block;
+      width: 35%;
+      #logo {
+        width: 212px;
+        height: 16px;
+        display: inline-block;
+        background-image: url(../image/logo.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+      }
+    .phone-wrap {
+      display: block;
+      width: 5%;
+      .phone-icon {
+        background-image: url(../image/phone_min.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 12px;
+        cursor: pointer;
+        }
+      }
+    }
+  .download_item_container {
+    text-align: justify;
+    transition: all 1s ease-in-out;
+   
+    .download_item {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      margin: 1px;
+      display: inline-block;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+      &:hover .download_item_overlay {
+        opacity: .5;
+      }
+      &:hover .download_item_icon {
+        opacity: 1;
+      }
+      .download_item_overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: #0f0f11;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all .2s ease-in-out;
+        z-index: 2;
+      }
+      
+      .download_item_icon {
+        display: block;
+        background-image: url(../image/download_big.png);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all .2s ease-in-out;
+        background-size: 40%;
+        z-index: 3;
+      }
+    }
+  }
+  .instagram {
+    //display: block;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right:auto;
+   .instagram_message {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+    color: dimgrey;
+   } 
+   .instagram_url_wrap {
+    display: block;
+    
+    a {
+      &:hover {
+        color: royalblue;
+      }
+      font-size: 1.2em;
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+   }
+  }
+  .links_not_found {
+    //display: block;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .loader {
+    //display: block;
+    padding: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../image/preloader2.gif);
+  }
+}
+.inactive {
+  display: none;
+}
